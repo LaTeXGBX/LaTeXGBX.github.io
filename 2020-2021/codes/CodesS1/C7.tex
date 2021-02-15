@@ -1,0 +1,13 @@
+% Encapsulation progressive des environnements
+% Le nombre d'argument est optionnel, d'où les [], vu qu'aucun argument n'est spécifié on omet d'en spécifier le nombre
+\newenvironment{abstract_sect}{
+\begin{flushright}      % Pour indenter on décale les blocs de texte vers la droite
+\begin{minipage}{0.85\textwidth}    % La commande \textwidth permet d'obtenir une valeur numérique décrivant la largeur de la page
+\begin{flushleft}   % On revient à un alignement classique dans le bloc de texte
+\begin{slshape}     % Environment mettant tout son contenu en italique
+}{
+% On ferme tous les environments à la fin
+\end{slshape}
+\end{flushleft}
+\end{minipage}
+\end{flushright}}
