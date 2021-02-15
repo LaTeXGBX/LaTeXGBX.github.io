@@ -13,6 +13,10 @@ a::before
 {
     content: " •";
 }
+img 
+{
+    width = 50px;
+}
 a:hover
 {
     color: #5FA4B0;
