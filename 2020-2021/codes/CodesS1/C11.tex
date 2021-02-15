@@ -1,0 +1,20 @@
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Première facon de passer les arguments
+\fancyhead[LE,RO]{Overleaf}
+\fancyhead[RE,LO]{Guides and tutorials}
+\fancyfoot[CE,CO]{\leftmark}
+\fancyfoot[LE,RO]{\thepage}
+
+% Seconde facon de passer les arguments 
+
+\lhead{\bf{La belle en-tête}} 
+\chead{}
+\rhead{\small{\textit{\leftmark}}} 
+%\leftmark fait référence au plus grand numéro de section
+
+\lfoot{}
+\cfoot{}
+\rfoot{\thepage /\pageref{LastPage}}
+%faire référence à  la dernière page demande le package "LastPage"
