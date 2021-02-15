@@ -13,9 +13,8 @@ a::before
 {
     content: " •";
 }
-img 
-{
-    width = 50px;
+.fit-picture {
+    width: 50px;
 }
 a:hover
 {
