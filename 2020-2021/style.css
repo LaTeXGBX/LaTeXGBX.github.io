@@ -3,6 +3,12 @@
     padding: 0cm;
     margin: 0cm;
 }
+a
+{
+    list-style-type: none;
+    text-decoration: underline;
+    color: blue;
+
 }
 a::before
 {
