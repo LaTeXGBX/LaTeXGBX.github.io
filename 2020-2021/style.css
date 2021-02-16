@@ -3,11 +3,6 @@
     padding: 0cm;
     margin: 0cm;
 }
-a
-{
-    list-style-type: none;
-    text-decoration: none;
-    color: black;
 }
 a::before
 {
