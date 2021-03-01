@@ -1,0 +1,24 @@
+\FloatBarrier   
+\begin{table}[h!]   
+    \centering
+    \caption{Fusion...}
+    \subfloat[]{
+    \begin{tabular}{cc|c}   % | Ligne verticale entre les colonnes
+      \hline                % Ligne horizontale
+    Vegeta & Goku  & Broly \\
+    \hline     \hline        
+        1 & 2 & 3  \\    % & : sépare les colonnes
+        4 & 5 & 6  \\    % \\ : sépare les lignes
+    \hline        
+    \end{tabular}}
+    \subfloat[]{
+    \begin{tabular}{ccc}
+      \hline
+    \multicolumn{2}{c}{Gogeta} &  Broly \\  % Fusion de Vegeta et Goku
+    \hline     \hline        
+    \multicolumn{2}{c}{\multirow{2}{*}{9} } & 3 \\  % Ordre : on fusionne les colonnes puis on fusionne les lignes
+         &  & 6 \\
+    \hline        
+    \end{tabular}}
+\end{table}
+\FloatBarrier
