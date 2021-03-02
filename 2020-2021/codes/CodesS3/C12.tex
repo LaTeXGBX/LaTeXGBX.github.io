@@ -1,0 +1,29 @@
+\documentclass{article}
+
+\usepackage{pgfplotstable}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{siunitx}
+
+\begin{document}
+    \pgfplotstableset{
+        begin table=\begin{longtable},
+        end table=\end{longtable},
+    }
+    \pgfplotstabletypeset[
+        columns/temperature/.style={
+            string type,
+            column name=Temperature(K)
+        },
+        columns/value/.style={
+            string type,
+            column name=Value($m^3$)
+        },
+        every head row/.append style={before row={\caption{Some caption}\label{tab:sometable}\\\toprule},after row=\midrule\endfirsthead},
+        every first row/.append style={before row={\multicolumn{2}{c}{}\\ \caption[]{Some caption}\\\toprule},after row=\midrule\endhead},
+        every last row/.style={after row=\bottomrule},
+    ]{sometable.dat}
+
+    Refer to the table here \ref{tab:sometable}.
+\end{document}
