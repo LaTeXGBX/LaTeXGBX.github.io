@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\usepackage{siunitx} % Formats the units and values
+\usepackage{pgfplotstable} % Generates table from .csv
+% Setup siunitx:
+\sisetup{
+  round-mode          = places, % Rounds numbers
+  round-precision     = 2, % to 2 places
+}
+
+\begin{document}
+
+    \pgfplotstabletypeset[
+      multicolumn names,
+      col sep=comma, % the seperator in our .csv file
+      string type, % Added in hopes of enabling alphabetic input.
+      display columns/0/.style={
+                column name=\textit{Value 1}, % name of first column
+                string type},  % use siunitx for formatting
+      display columns/1/.style={
+                column name=\textit{Value 2},
+                column type={S[table-format=2.2e2]}}
+    ]{
+Two,2.00000E+015 
+Three,2.000000E+015   
+    }
+
+\end{document} 
