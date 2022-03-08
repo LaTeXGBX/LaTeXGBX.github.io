@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt]{article}  % Format papier, taille du texte, type de document
+
+\usepackage[utf8]{inputenc}             % Utilisé  pour notamment pouvoir écrire directement les accents dans le fichier source
+\usepackage{lmodern}                    % Font utilisé dans la plupart des documents LaTeX 
+\usepackage[french]{babel}              % Package dédié aux langues... Mais dans le cas de documents en rédigés en plusieurs langues, il est possible d'utiliser les commandes de ce package pour traduire les \abstract, \chapter \section, \subsection en fonction de la langue utilisée dans une partie donnée du document  
+\usepackage[T1]{fontenc}                % Ce package permet quant à lui d’afficher et de prendre correctement en charge ces caractères accentués (du point de vue du fichier de sortie). Il est préférable de toujours écrire ce package après inputenc.
+
+
+% ams : American Mathematical Society, de quoi écrire le contenu mathématique conventionnel
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm} 
+
+\usepackage[linktocpage]{hyperref}      % Permet d'ajouter des liens hypertexte
+
+\usepackage{geometry}                   % On définit les marges et les bordures
+\geometry{
+includeheadfoot,
+top=1.5cm,
+bottom=1.5cm,
+right=2.00cm,
+left=2.00cm}
+% On écrit les commentaires avec le symbole pourcent en LaTeX
+
+% Gestion des images
+\usepackage{graphicx,adjustbox} 
+\usepackage{subfig}
+\usepackage{epstopdf} 				% Apres graphicx
+\usepackage{placeins} % Floatbarrier vous sauvera toutes et tous
+
+%   Gère instruction pour dessiner en lignes de codes, décommenter 
+% si test du code Python
+% \usepackage{tikz}   % gestion
+% \usepackage{pgfplots} 
+
+
+
+
+% \pgfplotsset{compat=newest}
+% \usetikzlibrary{calc}
+
+\begin{document}
+Coucou
+\end{document}
